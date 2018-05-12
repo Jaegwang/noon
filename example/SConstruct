@@ -1,0 +1,14 @@
+##================================================
+## SCConstruct
+##================================================
+## Authors : Jaegwang Lim
+## Path : /base/SCConstruct
+## Creation Date : 2018.01.11
+## Modified Date : 2018.01.11
+## Version : 0.0
+##================================================
+
+import os
+
+if not os.path.exists( './build') : os.makedirs( './build' )
+SConscript( 'SConscript.py', variant_dir='./build', duplicate=0 )
